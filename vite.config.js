@@ -25,11 +25,9 @@ export default defineConfig({
     include: ["@formkit/auto-animate/react"],
   },
   build: {
-    // Allow the build to continue even if there are TypeScript errors
     typescript: {
       tsconfig: "./tsconfig.json",
-      // Ignore errors during the build
-      // If you're using TypeScript, this will allow the build to continue despite errors
+      // Here, we specify to ignore errors
     },
   },
 });

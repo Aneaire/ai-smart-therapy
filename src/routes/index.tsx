@@ -197,7 +197,7 @@ function App(): JSX.Element {
             messages={messages}
             selectedConcern={selectedConcern}
             onSendMessage={handleSendMessage}
-            isLoading={isLoading} // optionally pass loading state
+            // isLoading={isLoading} // optionally pass loading state
           />
         )}
       </main>

@@ -8,14 +8,13 @@ interface ChatInterfaceProps {
   messages: Message[];
   selectedConcern: MentalHealthConcern | null;
   onSendMessage: (message: string) => void;
-  isLoading: boolean;
+  //   isLoading: boolean;
 }
 
 export function ChatInterface({
   messages,
   selectedConcern,
   onSendMessage,
-  isLoading,
 }: ChatInterfaceProps): JSX.Element {
   return (
     <>
