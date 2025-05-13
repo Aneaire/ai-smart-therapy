@@ -1,7 +1,7 @@
 import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import { ParticlesBackground } from "@/components/common/particle";
+import { ParticlesBackground } from "@/components/common/Particle";
 import HeaderUser from "@/integrations/clerk/header-user";
 import AppClerkProvider from "@/integrations/clerk/provider.tsx";
 import { SignedIn } from "@clerk/clerk-react";
