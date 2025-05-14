@@ -2,9 +2,10 @@ import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
 import { ParticlesBackground } from "@/components/common/Particle";
+import { WelcomeScreen } from "@/components/WelcomeScreen";
 import HeaderUser from "@/integrations/clerk/header-user";
 import AppClerkProvider from "@/integrations/clerk/provider.tsx";
-import { SignedIn } from "@clerk/clerk-react";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
 import type { QueryClient } from "@tanstack/react-query";
 
 interface MyRouterContext {
@@ -25,9 +26,15 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
                   <HeaderUser />
                 </SignedIn>
               </div>
-              <div className="container mx-auto md:p-4 p-2">
-                <Outlet />
-              </div>
+              <SignedIn>
+                {" "}
+                <div className="container mx-auto md:p-4 p-2">
+                  <Outlet />
+                </div>
+              </SignedIn>
+              <SignedOut>
+                <WelcomeScreen />
+              </SignedOut>
               <TanStackRouterDevtools />
             </div>
           </div>
