@@ -27,7 +27,6 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
                 </SignedIn>
               </div>
               <SignedIn>
-                {" "}
                 <div className="container mx-auto md:p-4 p-2">
                   <Outlet />
                 </div>

@@ -27,7 +27,7 @@ export const ParticlesBackground = () => {
 
   useEffect(() => {
     const createParticles = () => {
-      const particlesCount = 50;
+      const particlesCount = 100;
       const newParticles = [];
 
       for (let i = 0; i < particlesCount; i++) {
