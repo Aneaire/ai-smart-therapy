@@ -11,7 +11,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useClerk } from "@clerk/clerk-react";
 import {
   ArrowRightIcon,
-  Brain,
   LockIcon as LockClosedIcon,
   Sparkles,
 } from "lucide-react";
@@ -36,8 +35,9 @@ export const WelcomeScreen = () => {
         <Card className="w-full shadow-xl border-0">
           <CardHeader className="space-y-1 text-center">
             <div className="flex justify-center mb-2">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                <Brain className="h-6 w-6 text-blue-600" />
+              <div className="h-16 w-16 rounded-full bg-green-100 flex items-center justify-center p-2">
+                {/* <Brain className="h-6 w-6 text-blue-600" /> */}
+                <img src="/logo2.png" alt="logo" />
               </div>
             </div>
             <CardTitle className="text-2xl font-bold tracking-tight">
